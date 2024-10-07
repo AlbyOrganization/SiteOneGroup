@@ -20,15 +20,14 @@
 ## Paleta de cores e formato de texto
 | Cores Principais    | Uso |Código Hexadecimal |
 | --------------- |-----|-------------------|
-| **A definir**   | **A definir**  | **A definir** |
-| **A definir**    | **A definir** | **A definir** |
-|**A definir**  | **A definir**    | **A definir** |
+| Azul Marinho Claro   | Cor de fundo | #284b63 |
+| Branco | Cor do texto | #fff |
+| Cinza Escuro | Cor de fundo de subtítulos, cabeçalho e rodapé | 353535 |
 
-| Cores Secundárias      | Código Hexadecimal|
-| ------------------ | ----------------- |
-| **A definir** | **A definir** | **A definir** |
-| **A definir**  | **A definir** | **A definir** |
+| Cores Secundárias | Uso | Código Hexadecimal|
+| --------------- |-----|-------------------|
+| Cinza | Cor de fundo de botão | #d9d9d9 |
 
 | Fonte padrão de texto |
 |-----------------------|
-| **A definir** |
+| A definir |
