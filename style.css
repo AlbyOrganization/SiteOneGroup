@@ -1,5 +1,17 @@
+:root{
+    /* BACKGROUND */
+    --background-container: #284b6389;
+    --background-conteudo: #353535;
+    --background-body: #ffff;
+    --background-h1: #284b6389;
+    --background-h2: #284b63;
+    --background-h6: #353535;
+    --background-botao: #5a89a8;
+    --background-botao-hover: #2b495e;
+}
+
 div#container {
-    background-color: #284b6389;
+    background-color: var(--background-container);
     width: 1500px;
     height: auto;
     display: flex;
@@ -9,7 +21,7 @@ div#container {
 }
 
 div#conteudo {
-    background-color: #353535;
+    background-color: var(--background-conteudo);
     width: 100%;
     height: 500px;
 }
@@ -20,7 +32,6 @@ img {
 }
 
 body {
-    background-color: #ffff;
     color: #3c6e71;
     text-align: center;
     font-size: 30px;
@@ -32,17 +43,26 @@ body {
 }
 
 h1 {
-    background-color: #284b6389;
+    background-color: var(--background-h1);
     color: #eb6d3f;
 }
 
-h2 {
-    background-color: #284b63;
+.secao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-h2);
     color: #eb6d3f;
+    height: 100px;
 }
 
-h6 {
-    background-color: #353535;
+footer {
+    margin-top: 10px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-h6);
     color: #eb6d3f;
 }
 
@@ -52,6 +72,7 @@ h6 {
 }
 
 .botao {
+    background-color: var(--background-botao);
     color: #d9d9d9;
     padding: 10px 20px;
     border: none;
@@ -61,12 +82,8 @@ h6 {
     cursor: pointer;
 }
 
-.azul {
-    background-color: #5a89a8;
-}
-
 .botao:hover {
-    background-color: #2b495e;
+    background-color: var(--background-botao-hover);
     color: #989797;
 }
 
@@ -97,7 +114,7 @@ h4 {
     padding: 0 30px;
 }
 
-.Separacao1 {
+.service {
     padding: 0 30px;
     background-color: #ffff;
     border: 10px solid #ff9670af;
@@ -105,112 +122,55 @@ h4 {
     border-color: #eb6d3f;
 }
 
-.Separacao2 {
-    padding: 0 30px;
-    background-color: #ffff;
-    border: 10px solid #ff9670af;
-    border-style: inset;
-    border-color: #eb6d3f;
-}
-
-.Separacao3 {
-    padding: 0 30px;
-    background-color: #ffff;
-    border: 10px solid #ff9670af;
-    border-style: inset;
-    border-color: #eb6d3f;
-}
-
-.Separacao4 {
-    padding: 0 30px;
-    background-color: #ffff;
-    border: 10px solid #ff9670af;
-    border-style: inset;
-    border-color: #eb6d3f;
-}
-
-.Separacao5 {
-    padding: 0 30px;
-    background-color: #ffff;
-    border: 10px solid #ff9670af;
-    border-style: inset;
-    border-color: #eb6d3f;
+.team {
+    padding: 0 15px;
+    display: flex;
+    columns: row;
+    justify-content: space-around;
 }
 
 #texto1 {
     font-size: 26px;
 }
 
-.bloquinho {
+.card1, .card2, .card3, .card4, .card5, .card6, .card7 {
     display: flex;
+    width: 350px;
+    height: 500px;
+    border-radius: 15px;
+    color: #d9d9d9;
+}
+
+.card1{
     background-color: #eb6d3f;
-    width: 350px;
-    height: 500px;
-    border-radius: 15px;
-    color: #d9d9d9;
 }
 
-.bloquinho1 {
+.card2{
     background-color: #2b495e;
-    width: 350px;
-    height: 500px;
-    border-radius: 15px;
-    color: #d9d9d9;
 }
 
-.bloquinho2 {
+.card3{
     background-color: #c3826a;
-    width: 350px;
-    height: 500px;
-    border-radius: 15px;
-    color: #d9d9d9;
 }
 
-.bloquinho3 {
-    background-color: #608aa8;
-    width: 350px;
-    height: 500px;
-    border-radius: 15px;
-    color: #d9d9d9;
+.card3{
+    background-color: hsl(205, 29%, 52%);
 }
 
-.bloquinho4 {
+.card4{
     background-color: #94614e;
-    width: 350px;
-    height: 500px;
-    border-radius: 15px;
-    color: #d9d9d9;
 }
 
-.bloquinho5 {
+.card5{
     background-color: #17585c;
-    width: 350px;
-    height: 500px;
-    border-radius: 15px;
-    color: #d9d9d9;
 }
 
-.bloquinho6 {
+.card6{
     background-color: #843012;
-    width: 350px;
-    height: 500px;
-    border-radius: 15px;
-    color: #d9d9d9;
 }
 
-.bloquinho7 {
+.card7{
     background-color: #3979a7e1;
-    width: 350px;
-    height: 500px;
-    border-radius: 15px;
-    color: #d9d9d9;
-}
-
-.separacao6 {
-    padding: 0 15px;
-    display: flex;
-    columns: row;
-    justify-content: space-around;
 }
 
 #photo {
