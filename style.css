@@ -1,85 +1,93 @@
-:root{
+:root {
     /* BACKGROUND */
-    --background-container: #284b6389;
+    --background-header: #284b6389;
     --background-conteudo: #353535;
     --background-body: #ffff;
+    /*H*/
     --background-h1: #284b6389;
+    --color-h1: #eb6d3f;
     --background-h2: #284b63;
     --background-h6: #353535;
+    /*BUTTONS*/
     --background-botao: #5a89a8;
     --background-botao-hover: #2b495e;
+
+    /*CARD*/
+    --background-card1: #eb6d3f;
+    --background-card2: #2b495e;
+    --background-card3: #c3826a;
+    --background-card4: hsl(205, 29%, 52%);
+    --background-card5: #94614e;
+    --background-card6: #17585c;
+    --background-card7: #843012;
+    --background-card8: #3979a7e1;
+
+    --secao-color: #eb6d3f;
+    --footer-color: #eb6d3f;
+
+    /*COLOR BUTTON*/
+    --color-botao: #989797;
+
+    /*BORDER COLOR*/
+    --border: #ff9670af;
+    --border-color: #eb6d3f;
+
+    --card-color: #d9d9d9;
+    --button-color: #d9d9d9;
 }
 
-div#container {
-    background-color: var(--background-container);
-    width: 1500px;
+* {
+    margin: 0 auto;
+    font-family: 'Axiforma';
+}
+
+body {
+    text-align: justify;
+    color: #3c6e71;
+    font-size: 30px;
+    font-weight: 900px;
+    font-style: normal;
+}
+
+main {
+    width: 80%;
+}
+
+header {
+    background-color: var(--background-header);
+    /* width: 100%; */
+    width: 80%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
-div#conteudo {
+#section-logo {
     background-color: var(--background-conteudo);
-    width: 100%;
+    width: 80%;
     height: 500px;
+}
+#enterprise{
+    width: 20%;
+}
+#enterprise>h1{
+    text-align: center;
 }
 
 img {
-    width: 100px;
+    width: 100%;
     height: 500px;
+    object-fit: cover;
 }
 
-body {
-    color: #3c6e71;
-    text-align: center;
-    font-size: 30px;
-    font-family: 'Axiforma';
-    font-weight: 900;
-    font-style: normal;
-
-
+section#conteudo img {
+    width: 100%;
 }
 
 h1 {
     background-color: var(--background-h1);
-    color: #eb6d3f;
-}
-
-.secao {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--background-h2);
-    color: #eb6d3f;
-    height: 100px;
-}
-
-footer {
-    margin-top: 10px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--background-h6);
-    color: #eb6d3f;
-}
-
-.botao {
-    background-color: var(--background-botao);
-    color: #d9d9d9;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1em;
-    cursor: pointer;
-}
-
-.botao:hover {
-    background-color: var(--background-botao-hover);
-    color: #989797;
+    color: var(--color-h1);
 }
 
 h3 {
@@ -93,28 +101,65 @@ h4 {
     text-align: left;
 }
 
-.divisao {
+.secao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-h2);
+    color: var(--secao-color);
+    height: 100px;
+}
+
+footer {
+    margin-top: 10px;
+    margin-right: 0px 10px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-h6);
+    color: var(--footer-color);
+}
+
+#botao {
+    background-color: var(--background-botao);
+    color: var(--button-color);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: var(--background-botao-hover);
+    color: var(--color-botao);
+}
+
+#services {
     display: flex;
     columns: row;
     justify-content: space-around;
     height: 400px;
-    padding: 0 30px;
-}
-
-.divisao1 {
-    display: flex;
-    columns: row;
-    justify-content: space-around;
-    height: 350px;
-    padding: 0 30px;
+    padding: 0 0;
+    /*estava 30 px*/
 }
 
 .service {
     padding: 0 30px;
-    background-color: #ffff;
-    border: 10px solid #ff9670af;
+    background-color: var(--background-body);
+    border: 10px solid var(--border);
     border-style: inset;
-    border-color: #eb6d3f;
+    border-color: var(--border-color);
+}
+
+#services2 {
+    display: flex;
+    columns: row;
+    justify-content: space-around;
+    height: 350px;
+    padding: 0 0;
+    /*estava 30 px*/
 }
 
 .team {
@@ -128,51 +173,87 @@ h4 {
     font-size: 26px;
 }
 
-.card{
+.card {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    width: 350px;
-    height: 500px;
+    width: 20vw;
+    height: auto;
     border-radius: 15px;
-    color: #d9d9d9;
+    color: var(--card-color);
 }
 
-.card:nth-child(){
-    background-color: #eb6d3f;
+.card>section:first-child {
+    margin-left: 10px;
 }
 
-.card2{
-    background-color: #2b495e;
+.card-info {
+    word-wrap: wrap;
+    text-indent: 10%;
 }
 
-.card3{
-    background-color: #c3826a;
+.card1 {
+    background-color: var(--background-card1);
 }
 
-.card3{
-    background-color: hsl(205, 29%, 52%);
+.card2 {
+    background-color: var(--background-card2);
 }
 
-.card4{
-    background-color: #94614e;
+.card3 {
+    background-color: var(--background-card3);
 }
 
-.card5{
-    background-color: #17585c;
+.card4 {
+    background-color: var(--background-card4);
 }
 
-.card6{
-    background-color: #843012;
+.card5 {
+    background-color: var(--background-card5);
 }
 
-.card7{
-    background-color: #3979a7e1;
+.card6 {
+    background-color: var(--background-card6);
+}
+
+.card7 {
+    background-color: var(--background-card7);
+}
+
+.card8 {
+    background-color: var(--background-card8);
+}
+
+.card9 {
+    background-color: var(--background-card1);
+}
+
+.card10 {
+    background-color: var(--background-card2);
+}
+
+.card11 {
+    background-color: var(--background-card3);
+}
+
+.card12 {
+    background-color: var(--background-card4);
+}
+
+.card13 {
+    background-color: var(--background-card5);
+}
+
+.card14 {
+    background-color: var(--background-card6);
+}
+
+.card15 {
+    background-color: var(--background-card7);
 }
 
 .photo {
-    width: 35px;
-    height: 35px;
+    width: auto;
+    height: 20vh;
     border-radius: 8px;
 }
