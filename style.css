@@ -53,36 +53,13 @@ main {
     width: 80%;
 }
 
-header {
-    background-color: var(--background-header);
-    /* width: 100%; */
-    width: 80%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 #section-logo {
     background-color: var(--background-conteudo);
     width: 80%;
-    height: 500px;
 }
-#enterprise{
-    width: 20%;
-}
-#enterprise>h1{
-    text-align: center;
-}
-
-img {
+#section-logo img{
     width: 100%;
-    height: 500px;
-    object-fit: cover;
-}
-
-section#conteudo img {
-    width: 100%;
+    height: 60vh;
 }
 
 h1 {
@@ -95,13 +72,11 @@ h3 {
     text-align: start;
 }
 
-h4 {
-    font-size: 25px;
-    align-items: center;
-    text-align: left;
+#article-service{
+    height: 40vh;
 }
 
-.secao {
+.title-h2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,39 +85,35 @@ h4 {
     height: 100px;
 }
 
-footer {
-    margin-top: 10px;
-    margin-right: 0px 10px;
-    height: 100px;
+#section-info-paragraph {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.services {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--background-h6);
-    color: var(--footer-color);
-}
-
-#botao {
-    background-color: var(--background-botao);
-    color: var(--button-color);
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1em;
-    cursor: pointer;
-}
-
-.botao:hover {
-    background-color: var(--background-botao-hover);
-    color: var(--color-botao);
-}
-
-#services {
-    display: flex;
-    columns: row;
+    columns: column;
     justify-content: space-around;
-    height: 400px;
+    width: 100%;
+    height: 42vh;
     padding: 0 0;
-    /*estava 30 px*/
+}
+
+.services p {
+    font-size: 1.2rem;
+    align-items: center;
+    text-align: left;
+}
+
+.service-paragraph{
+    width: 100%;
+    margin: 10px;
+}
+
+.service-title {
+    font-size: 1.3rem;
+    width: 100%;
+    height: 100px;
 }
 
 .service {
@@ -153,15 +124,6 @@ footer {
     border-color: var(--border-color);
 }
 
-#services2 {
-    display: flex;
-    columns: row;
-    justify-content: space-around;
-    height: 350px;
-    padding: 0 0;
-    /*estava 30 px*/
-}
-
 .team {
     padding: 0 15px;
     display: flex;
@@ -169,91 +131,44 @@ footer {
     justify-content: space-around;
 }
 
-#texto {
-    font-size: 26px;
+
+#carouselExampleCaptions {
+    width: 100%;
+    height: auto;
 }
 
-.card {
+.carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 70vh;
+}
+
+footer {
+    margin-top: 10px;
+    margin-right: 0px 10px;
+    width: 100%;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20vw;
-    height: auto;
-    border-radius: 15px;
-    color: var(--card-color);
+    background-color: var(--background-h6);
+    color: var(--footer-color);
 }
 
-.card>section:first-child {
-    margin-left: 10px;
+#copyright, #info h2, #contato{
+    font-size: 1.6rem;
 }
 
-.card-info {
-    word-wrap: wrap;
-    text-indent: 10%;
+#copyright {
+    width: 25%;
+    margin-left: 30px;
 }
 
-.card1 {
-    background-color: var(--background-card1);
+#info {
+    width: 50%;
 }
 
-.card2 {
-    background-color: var(--background-card2);
-}
-
-.card3 {
-    background-color: var(--background-card3);
-}
-
-.card4 {
-    background-color: var(--background-card4);
-}
-
-.card5 {
-    background-color: var(--background-card5);
-}
-
-.card6 {
-    background-color: var(--background-card6);
-}
-
-.card7 {
-    background-color: var(--background-card7);
-}
-
-.card8 {
-    background-color: var(--background-card8);
-}
-
-.card9 {
-    background-color: var(--background-card1);
-}
-
-.card10 {
-    background-color: var(--background-card2);
-}
-
-.card11 {
-    background-color: var(--background-card3);
-}
-
-.card12 {
-    background-color: var(--background-card4);
-}
-
-.card13 {
-    background-color: var(--background-card5);
-}
-
-.card14 {
-    background-color: var(--background-card6);
-}
-
-.card15 {
-    background-color: var(--background-card7);
-}
-
-.photo {
-    width: auto;
-    height: 20vh;
-    border-radius: 8px;
+#contato {
+    width: 25%;
+    margin-right: 10px;
 }
