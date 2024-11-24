@@ -73,7 +73,7 @@ h3 {
 }
 
 #article-service{
-    height: 40vh;
+    height: 35vh;
 }
 
 .title-h2 {
@@ -224,6 +224,14 @@ footer {
         padding: 10px;
     }
 
+    .article-service {
+        height: 1vh;
+    }
+
+    .margin-services {
+        margin-bottom: auto;
+    }
+
     .service {
         margin-bottom: 15px;
         width: 90%;
@@ -272,6 +280,10 @@ footer {
 
     #section-logo img {
         height: 50vh;
+    }
+
+    #article-service {
+        height: 30vh;
     }
 
     .services {
