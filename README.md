@@ -7,7 +7,7 @@
 - [Alberto Ziurkelis de Araujo](https://github.com/AlbertZiurk) --> Orientador
 - [Cauê Alves Barreto](https://github.com/CaueSoaresValente) -->  Desenvolvedor Front-End
 - [Bianca Vieira Santos](https://github.com/GuilhermebNery) --> Arquiteta de Software
-
+- [Raquel]
 ## Estrutura de Pastas do Projeto (A definir)
 
 ## Stack utilizada
@@ -18,16 +18,12 @@
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
 ## Paleta de cores e formato de texto
-| Cores Principais    | Uso |Código Hexadecimal |
-| --------------- |-----|-------------------|
-| Azul Marinho Claro   | Cor de fundo | #284b63 |
-| Branco | Cor do texto | #fff |
-| Cinza Escuro | Cor de fundo de subtítulos, cabeçalho e rodapé | 353535 |
-
-| Cores Secundárias | Uso | Código Hexadecimal|
-| --------------- |-----|-------------------|
-| Cinza | Cor de fundo de botão | #d9d9d9 |
+| Cores Principais    | Uso |Código Hexadecimal | Variáveis
+| --------------- |-----|-------------------| -- |
+| Azul Marinho Claro.   | Cor de fundo para títulos de seções. | #284b63 | --background-h2|
+| Branco | Cor de fundo de conteúdo de seções. | #fff | --background-body |
+| Laranja Claro | Cor de fundo de subtítulos, cabeçalho e rodapé | #eb6d3f | --secao-color, --background-card1, --background-card1, --footer-color. |
 
 | Fonte padrão de texto |
 |-----------------------|
-| A definir |
+| Axiforma |
