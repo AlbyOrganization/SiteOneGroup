@@ -39,6 +39,7 @@
 * {
     margin: 0 auto;
     font-family: 'Axiforma';
+    box-sizing: border-box;
 }
 
 body {
@@ -73,7 +74,9 @@ h3 {
 }
 
 #article-service{
-    height: 35vh;
+    flex-grow: 1;
+    flex-basis: 40vh;
+    margin-bottom: 10px;
 }
 
 .title-h2 {
@@ -172,6 +175,60 @@ footer {
     width: 25%;
     margin-right: 10px;
 }
+
+#identity-enterprise{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+#identity-enterprise #titles{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: var(--background-h2);
+}
+
+#identity-enterprise #content-enterprise{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-wrap: wrap;
+    padding: 5px 30px 20px 10px;
+}
+
+#identity-enterprise .service-paragraph, .service-paragraph ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    font-size: 1.1rem;
+    text-align: left;
+    list-style: upper-roman;
+    margin: 0 10px;
+    padding: 0;
+}
+
+.service-paragraph ul li{
+    margin: 5px 0px;
+}
+
+.service-paragraph ul > li:nth-child(1){
+    margin-right: 10px;
+}
+
+.service-paragraph ul > li:nth-child(5){
+    margin-left: 20px;
+}
+
+.service-paragraph ul > li:nth-child(6){
+    margin-left: 30px;
+}
+
 
 /* RESPONSIVIDADE */
 
