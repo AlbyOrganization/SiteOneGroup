@@ -82,10 +82,9 @@ h3 {
 }
 
 #section-info-paragraph {
-    margin: 10px;
+    margin: 20px;
     font-size: 1.25rem;
 }
-
 .services {
     display: flex;
     columns: column;
@@ -106,11 +105,7 @@ h3 {
     margin: 30px 0px;
 }
 
-.service-title{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .service {
     padding: 0 30px;
@@ -129,6 +124,9 @@ h3 {
     font-size: 1.25rem;
     width: 100%;
     height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }
 
 .team {
@@ -142,10 +140,36 @@ h3 {
 #carouselExampleCaptions {
     width: 100%;
     height: auto;
+    position: relative; 
+
 }
 
 .carousel-item {
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    width: 100%; 
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    width: 40px; 
+    height: 40px; 
+    background: rgba(0, 0, 0, 0.5); 
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    z-index: 10; 
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background: rgba(0, 0, 0, 0.8); 
+}
+
+.carousel-item {
+    transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 .carousel-item img {
@@ -173,6 +197,14 @@ footer {
     font-size: 1.6rem;
 }
 
+#contato span a{
+    color: var(--background-card1);
+}
+
+#contato span a:hover{
+    color: var(--background-botao);
+}
+
 #copyright {
     width: 25%;
 }
@@ -186,11 +218,15 @@ footer {
 }
 
 .service-paragraph-enterprise p{
-    margin: 30px 40px;
+    margin: 30px;
+    margin-right: 40px;
+    margin-left: 20px;
     min-height: 40%;
     text-align: left;
-    font-size: 1.6rem;
+    font-size: 1.06rem;
 }
+
+
 
 /* RESPONSIVIDADE */
 
@@ -268,6 +304,14 @@ footer {
         height: auto;
         padding: 10px;
     }
+
+    .carousel-item .col-md-4 {
+        display: none; /* Oculta todas as colunas */
+    }
+
+    .carousel-item .col-md-4:first-child {
+        display: block; /* Mostra apenas a primeira coluna */
+    }
 }
 
 /* Tablet */
@@ -275,6 +319,15 @@ footer {
     body {
         font-size: 22px;
     }
+   
+    .carousel-item .col-md-4 {
+        display: none; 
+    }
+
+    .carousel-item .col-md-4:first-child {
+        display: block; 
+    }
+
 
     #section-logo{
         width: 100%;
