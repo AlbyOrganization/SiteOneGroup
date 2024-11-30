@@ -3,37 +3,27 @@
     --background-header: #284b6389;
     --background-conteudo: #353535;
     --background-body: #ffff;
+
     /*H*/
     --background-h1: #284b6389;
     --color-h1: #eb6d3f;
     --background-h2: #284b63;
     --background-h6: #353535;
+
     /*BUTTONS*/
     --background-botao: #5a89a8;
     --background-botao-hover: #2b495e;
 
-    /*CARD*/
-    --background-card1: #eb6d3f;
-    --background-card2: #2b495e;
-    --background-card3: #c3826a;
-    --background-card4: hsl(205, 29%, 52%);
-    --background-card5: #94614e;
-    --background-card6: #17585c;
-    --background-card7: #843012;
-    --background-card8: #3979a7e1;
-    --card-color: #d9d9d9;
-
-    /*CARDS*/
+    /*SECTIONS*/
     --secao-color: #eb6d3f;
     --footer-color: #eb6d3f;
-
-    /*COLOR BUTTON*/
-    --color-botao: #989797;
-    --button-color: #d9d9d9;
 
     /*BORDER COLOR*/
     --border: #ff9670af;
     --border-color: #eb6d3f;
+
+    /*BODY*/
+    --body-color: #3c6e71;
 }
 
 * {
@@ -44,7 +34,7 @@
 
 body {
     text-align: justify;
-    color: #3c6e71;
+    color: var(--body-color);
     font-weight: 900px;
     font-style: normal;
 }
@@ -57,7 +47,8 @@ main {
     background-color: var(--background-conteudo);
     width: 100%;
 }
-#section-logo img{
+
+#section-logo img {
     width: 100%;
     height: 60vh;
 }
@@ -85,6 +76,7 @@ h3 {
     margin: 20px;
     font-size: 1.25rem;
 }
+
 .services {
     display: flex;
     columns: column;
@@ -101,7 +93,8 @@ h3 {
 }
 
 
-.services .service:nth-of-type(3) .service-title, .services .service .service-title{
+.services .service:nth-of-type(3) .service-title,
+.services .service .service-title {
     margin: 30px 0px;
 }
 
@@ -115,7 +108,7 @@ h3 {
     border-color: var(--border-color);
 }
 
-.service-paragraph{
+.service-paragraph {
     width: 100%;
     margin: 10px;
 }
@@ -136,36 +129,21 @@ h3 {
     justify-content: space-around;
 }
 
+/*CAROUSEL DESKTOP*/
 
-#carouselExampleCaptions {
+#carouselExampleCaptions, #carouselMobile {
     width: 100%;
     height: auto;
-    position: relative; 
-
+    position: relative;
 }
 
+/*CAROUSEL MOBILE*/
+
+#carouselMobile {
+    display: none;
+}
 .carousel-item {
-    width: 100%; 
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    position: absolute; 
-    top: 50%; 
-    transform: translateY(-50%); 
-    width: 40px; 
-    height: 40px; 
-    background: rgba(0, 0, 0, 0.5); 
-    border-radius: 50%; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    z-index: 10; 
-}
-
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-    background: rgba(0, 0, 0, 0.8); 
+    width: 100%;
 }
 
 .carousel-item {
@@ -176,6 +154,64 @@ h3 {
     object-fit: cover;
     width: 100%;
     height: 70vh;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-inner {
+    overflow: hidden;
+}
+
+.carousel-item {
+    width: 100%;
+}
+
+.carousel-item {
+    transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 70vh;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .carousel-inner {
@@ -193,16 +229,10 @@ footer {
     color: var(--footer-color);
 }
 
-#copyright, #info, #contato{
-    font-size: 1.6rem;
-}
-
-#contato span a{
-    color: var(--background-card1);
-}
-
-#contato span a:hover{
-    color: var(--background-botao);
+#copyright,
+#info,
+#contato {
+    font-size: 1.25rem;
 }
 
 #copyright {
@@ -210,14 +240,36 @@ footer {
 }
 
 #info {
-    width: 50%;
+    width: 35%;
 }
 
-#contato a{
+#contato a {
     width: 25%;
 }
 
-.service-paragraph-enterprise p{
+#contato span a {
+    color: var(--footer-color);
+    text-decoration: none;
+}
+
+#contato span a:hover {
+    color: var(--background-botao);
+    opacity: 0.2;
+}
+
+#github-icon {
+    width: 15%;
+}
+
+#github-icon a {
+    color: var(--footer-color);
+}
+
+#github-icon svg:hover {
+    opacity: 0.2;
+}
+
+.service-paragraph-enterprise p {
     margin: 30px;
     margin-right: 40px;
     margin-left: 20px;
@@ -225,8 +277,6 @@ footer {
     text-align: left;
     font-size: 1.03rem;
 }
-
-
 
 /* RESPONSIVIDADE */
 
@@ -304,13 +354,13 @@ footer {
         height: auto;
         padding: 10px;
     }
-
-    .carousel-item .col-md-4 {
-        display: none; /* Oculta todas as colunas */
+    
+    #carouselExampleCaptions {
+        display: none;
     }
 
-    .carousel-item .col-md-4:first-child {
-        display: block; /* Mostra apenas a primeira coluna */
+    #carouselMobile {
+        display: block;
     }
 }
 
@@ -319,17 +369,9 @@ footer {
     body {
         font-size: 22px;
     }
-   
-    .carousel-item .col-md-4 {
-        display: none; 
-    }
-
-    .carousel-item .col-md-4:first-child {
-        display: block; 
-    }
 
 
-    #section-logo{
+    #section-logo {
         width: 100%;
     }
 
@@ -337,7 +379,7 @@ footer {
         height: 50vh;
     }
 
-    #section-info-paragraph{
+    #section-info-paragraph {
         font-size: 1.06rem;
     }
 
@@ -347,7 +389,7 @@ footer {
 
     .services {
         display: flex;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
         justify-content: space-around;
         width: 100%;
         height: auto;
@@ -376,11 +418,18 @@ footer {
         width: 100%;
         text-align: center;
     }
+
+    #carouselExampleCaptions {
+        display: none;
+    }
+    
+    #carouselMobile {
+        display: block;
+    }
 }
 
 /* Desktop pequeno */
 @media (min-width: 769px) and (max-width: 1024px) {
-/* @media (min-width: 769px) and (max-width: 1024px) {  */
 
     body {
         font-size: 26px;
@@ -400,10 +449,11 @@ footer {
         width: 50%;
     }
 
-    .service-title h3{
+    .service-title h3 {
         font-size: 1.3rem;
     }
-    .service.service:nth-of-type(4) .service-paragraph p{
+
+    .service.service:nth-of-type(4) .service-paragraph p {
         font-size: 1rem;
     }
 
@@ -420,7 +470,8 @@ footer {
 
     #copyright,
     #info,
-    #contato {
+    #contato,
+    #github-icon {
         width: 100%;
         text-align: center;
     }
